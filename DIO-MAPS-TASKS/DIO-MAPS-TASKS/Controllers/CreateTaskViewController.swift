@@ -13,6 +13,8 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
     private var datePicker: UIDatePicker = UIDatePicker()
     private var selectedIndexPath: IndexPath?
     private var dateFormatter = DateFormatter()
+    private var taskRepository = TaskRepository.instance
+    var task: Task = Task()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,12 +50,13 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
         
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TaskDescriptionCell", for: indexPath) as! TaskDescriptionTableViewCell
-            //VERIFY: cell.taskDescriptionTextField.text = atributos
+            cell.taskDescriptionTextField.delegate = self
             return cell
         }
         
         if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+            cell.textLabel?.text = self.task.category.name
             return cell
         }
         
@@ -86,6 +89,7 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
             if let dateCell = cell {
                 dateCell.dateTimeTextField.text =  self.dateFormatter.string(from: datePicker.date)
                 self.view.endEditing(true)
+                self.task.date = datePicker.date
                 self.dismiss(animated: true, completion: nil)
             }
         }
@@ -100,12 +104,26 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
         }
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        self.task.name = textField.text!
+    }
     
     //MARK: Action button
     
     @IBAction func tappedSaveButton(_ sender: Any) {
-        //VERIFY: alterar aqui
-        print("saved")
+        taskRepository.save(task: task)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    //MARK: Segue Methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToCategoriesTableViewController" {
+            let destination = segue.destination as! CategoriesTableViewController
+            destination.choosenCategory = { category in
+                self.task.category = category
+                self.tableView.reloadData()
+            }
+        }
     }
     
 }

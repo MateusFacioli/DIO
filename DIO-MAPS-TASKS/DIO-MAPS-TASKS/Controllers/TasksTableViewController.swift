@@ -6,19 +6,20 @@
 //
 
 import UIKit
-let buy = Category(name: "Shopping list", color: .green)
-let study = Category(name: "Study", color: .blue)
-let tasks: [Task] = [
-    Task(name: "Buy books", date: Date(), category: buy),
-    Task(name: "study IOS", date: Date(), category: study),
-]
+
 class TasksTableViewController: UITableViewController {
 
+    private var tasks: [Task] = []
     private var dateFormatter: DateFormatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.tasks = TaskRepository.instance.getTasks()
+        self.tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4A279A2A1CE7A700220FB2 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */; };
+		DC4A279D2A1CE8D100220FB2 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */; };
+		DC4A279F2A1D58D900220FB2 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */; };
 		DC5BC94B292FFE8D003422C8 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94A292FFE8D003422C8 /* TaskTableViewCell.swift */; };
 		DC5BC94D2930260A003422C8 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */; };
 		DC5BC94F29303767003422C8 /* TaskDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94E29303767003422C8 /* TaskDescriptionTableViewCell.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		DC5BC94A292FFE8D003422C8 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		DC5BC94E29303767003422C8 /* TaskDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC4A279B2A1CE8AC00220FB2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */,
+				DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		DC5BC949292FFE57003422C8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +136,7 @@
 		DC74D506292BFD4B00EA5213 /* DIO-MAPS-TASKS */ = {
 			isa = PBXGroup;
 			children = (
+				DC4A279B2A1CE8AC00220FB2 /* Repositories */,
 				DC74D53A292C0E4C00EA5213 /* Models */,
 				DC74D537292C075400EA5213 /* Controllers */,
 				DC74D507292BFD4B00EA5213 /* AppDelegate.swift */,
@@ -154,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				DC74D538292C07AC00EA5213 /* TasksTableViewController.swift */,
+				DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */,
 				DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */,
 				DC5BC949292FFE57003422C8 /* Cells */,
 			);
@@ -302,13 +319,16 @@
 			files = (
 				DC74D53C292C168300EA5213 /* Task.swift in Sources */,
 				DC74D53E292C175200EA5213 /* Category.swift in Sources */,
+				DC4A279D2A1CE8D100220FB2 /* CategoryRepository.swift in Sources */,
 				DC5BC94B292FFE8D003422C8 /* TaskTableViewCell.swift in Sources */,
 				DC5BC94F29303767003422C8 /* TaskDescriptionTableViewCell.swift in Sources */,
 				DC5BC95129303796003422C8 /* DateTimeTableViewCell.swift in Sources */,
+				DC4A279F2A1D58D900220FB2 /* TaskRepository.swift in Sources */,
 				DC74D539292C07AC00EA5213 /* TasksTableViewController.swift in Sources */,
 				DC74D508292BFD4B00EA5213 /* AppDelegate.swift in Sources */,
 				DC74D50A292BFD4B00EA5213 /* SceneDelegate.swift in Sources */,
 				DC5BC94D2930260A003422C8 /* CreateTaskViewController.swift in Sources */,
+				DC4A279A2A1CE7A700220FB2 /* CategoriesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
