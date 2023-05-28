@@ -135,24 +135,78 @@
                                 <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite um endereço" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBK-Pp-Cv6">
+                                <rect key="frame" x="20" y="102" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yfy-KY-YVO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-gJ-57G">
+                                <rect key="frame" x="353" y="102" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7o7-Vv-LPu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="tappedShowAdress:" destination="TQJ-NZ-A3u" eventType="touchUpInside" id="ecG-xG-aK8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FSg-9Z-wiS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Sb-gJ-57G" firstAttribute="top" secondItem="FSg-9Z-wiS" secondAttribute="top" constant="10" id="02p-eB-Pdg"/>
+                            <constraint firstItem="FSg-9Z-wiS" firstAttribute="trailing" secondItem="KBK-Pp-Cv6" secondAttribute="trailing" constant="80" id="2f0-2G-Adb"/>
                             <constraint firstItem="FSg-9Z-wiS" firstAttribute="trailing" secondItem="YsG-1L-LUf" secondAttribute="trailing" id="IHq-zs-IIb"/>
                             <constraint firstItem="YsG-1L-LUf" firstAttribute="top" secondItem="FSg-9Z-wiS" secondAttribute="top" id="OxR-ee-qha"/>
+                            <constraint firstItem="6Sb-gJ-57G" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KBK-Pp-Cv6" secondAttribute="trailing" constant="8" symbolic="YES" id="TrH-nW-KIg"/>
                             <constraint firstItem="YsG-1L-LUf" firstAttribute="leading" secondItem="FSg-9Z-wiS" secondAttribute="leading" id="aEw-vU-CPe"/>
+                            <constraint firstItem="FSg-9Z-wiS" firstAttribute="trailing" secondItem="6Sb-gJ-57G" secondAttribute="trailing" constant="11" id="asQ-h2-F0h"/>
                             <constraint firstItem="FSg-9Z-wiS" firstAttribute="bottom" secondItem="YsG-1L-LUf" secondAttribute="bottom" id="dYK-Fr-t18"/>
+                            <constraint firstItem="KBK-Pp-Cv6" firstAttribute="top" secondItem="FSg-9Z-wiS" secondAttribute="top" constant="10" id="ev9-8b-jNf"/>
+                            <constraint firstItem="KBK-Pp-Cv6" firstAttribute="leading" secondItem="FSg-9Z-wiS" secondAttribute="leading" constant="20" id="wtF-dE-oBr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pAB-GS-k0y"/>
                     <connections>
+                        <outlet property="addressTextField" destination="KBK-Pp-Cv6" id="GzF-vM-wib"/>
                         <outlet property="mapView" destination="YsG-1L-LUf" id="Ok7-eP-sk6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0FS-lZ-UbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="347" y="757"/>
+        </scene>
+        <!--Addresses Table View Controller-->
+        <scene sceneID="yg1-tf-J4T">
+            <objects>
+                <tableViewController storyboardIdentifier="AddressesTableViewController" id="Ydm-Bl-V8N" customClass="AddressesTableViewController" customModule="DIO_MAPS_TASKS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Bwt-dG-pyC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddressCell" id="AzX-KK-kFn">
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AzX-KK-kFn" id="Eph-dJ-riK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ydm-Bl-V8N" id="BdQ-Cw-f3E"/>
+                            <outlet property="delegate" destination="Ydm-Bl-V8N" id="SnF-fv-DoQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfx-xB-jPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="762"/>
         </scene>
         <!--Create Task-->
         <scene sceneID="1gc-0t-Kfv">
@@ -311,6 +365,7 @@
     </scenes>
     <resources>
         <image name="location" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
