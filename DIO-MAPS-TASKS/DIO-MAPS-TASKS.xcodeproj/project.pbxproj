@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC466B582A1D681C00E2A7E6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC466B572A1D681C00E2A7E6 /* MapViewController.swift */; };
+		DC466B5A2A20675900E2A7E6 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC466B592A20675900E2A7E6 /* Address.swift */; };
+		DC466B5C2A206B5700E2A7E6 /* AddressesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC466B5B2A206B5700E2A7E6 /* AddressesTableViewController.swift */; };
+		DC4A279A2A1CE7A700220FB2 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */; };
+		DC4A279D2A1CE8D100220FB2 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */; };
+		DC4A279F2A1D58D900220FB2 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */; };
+		DC5BC94B292FFE8D003422C8 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94A292FFE8D003422C8 /* TaskTableViewCell.swift */; };
+		DC5BC94D2930260A003422C8 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */; };
+		DC5BC94F29303767003422C8 /* TaskDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94E29303767003422C8 /* TaskDescriptionTableViewCell.swift */; };
+		DC5BC95129303796003422C8 /* DateTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC95029303796003422C8 /* DateTimeTableViewCell.swift */; };
+		DC74D508292BFD4B00EA5213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D507292BFD4B00EA5213 /* AppDelegate.swift */; };
+		DC74D50A292BFD4B00EA5213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D509292BFD4B00EA5213 /* SceneDelegate.swift */; };
+		DC74D50F292BFD4B00EA5213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC74D50D292BFD4B00EA5213 /* Main.storyboard */; };
+		DC74D511292BFD4C00EA5213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC74D510292BFD4C00EA5213 /* Assets.xcassets */; };
+		DC74D514292BFD4C00EA5213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC74D512292BFD4C00EA5213 /* LaunchScreen.storyboard */; };
+		DC74D51F292BFD4D00EA5213 /* DIO_MAPS_TASKSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D51E292BFD4D00EA5213 /* DIO_MAPS_TASKSTests.swift */; };
+		DC74D529292BFD4D00EA5213 /* DIO_MAPS_TASKSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D528292BFD4D00EA5213 /* DIO_MAPS_TASKSUITests.swift */; };
+		DC74D52B292BFD4D00EA5213 /* DIO_MAPS_TASKSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D52A292BFD4D00EA5213 /* DIO_MAPS_TASKSUITestsLaunchTests.swift */; };
+		DC74D539292C07AC00EA5213 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D538292C07AC00EA5213 /* TasksTableViewController.swift */; };
+		DC74D53C292C168300EA5213 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D53B292C168300EA5213 /* Task.swift */; };
+		DC74D53E292C175200EA5213 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74D53D292C175200EA5213 /* Category.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC74D51B292BFD4D00EA5213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC74D4FC292BFD4B00EA5213 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC74D503292BFD4B00EA5213;
+			remoteInfo = "DIO-MAPS-TASKS";
+		};
+		DC74D525292BFD4D00EA5213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC74D4FC292BFD4B00EA5213 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC74D503292BFD4B00EA5213;
+			remoteInfo = "DIO-MAPS-TASKS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC466B572A1D681C00E2A7E6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DC466B592A20675900E2A7E6 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		DC466B5B2A206B5700E2A7E6 /* AddressesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesTableViewController.swift; sourceTree = "<group>"; };
+		DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		DC5BC94A292FFE8D003422C8 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		DC5BC94E29303767003422C8 /* TaskDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		DC5BC95029303796003422C8 /* DateTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeTableViewCell.swift; sourceTree = "<group>"; };
+		DC74D504292BFD4B00EA5213 /* DIO-MAPS-TASKS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DIO-MAPS-TASKS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC74D507292BFD4B00EA5213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC74D509292BFD4B00EA5213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC74D50E292BFD4B00EA5213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC74D510292BFD4C00EA5213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC74D513292BFD4C00EA5213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC74D515292BFD4C00EA5213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC74D51A292BFD4D00EA5213 /* DIO-MAPS-TASKSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIO-MAPS-TASKSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC74D51E292BFD4D00EA5213 /* DIO_MAPS_TASKSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIO_MAPS_TASKSTests.swift; sourceTree = "<group>"; };
+		DC74D524292BFD4D00EA5213 /* DIO-MAPS-TASKSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIO-MAPS-TASKSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC74D528292BFD4D00EA5213 /* DIO_MAPS_TASKSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIO_MAPS_TASKSUITests.swift; sourceTree = "<group>"; };
+		DC74D52A292BFD4D00EA5213 /* DIO_MAPS_TASKSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIO_MAPS_TASKSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC74D538292C07AC00EA5213 /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
+		DC74D53B292C168300EA5213 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DC74D53D292C175200EA5213 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC74D501292BFD4B00EA5213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC74D517292BFD4D00EA5213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC74D521292BFD4D00EA5213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC4A279B2A1CE8AC00220FB2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */,
+				DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DC5BC949292FFE57003422C8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DC5BC94A292FFE8D003422C8 /* TaskTableViewCell.swift */,
+				DC5BC94E29303767003422C8 /* TaskDescriptionTableViewCell.swift */,
+				DC5BC95029303796003422C8 /* DateTimeTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DC74D4FB292BFD4B00EA5213 = {
+			isa = PBXGroup;
+			children = (
+				DC74D506292BFD4B00EA5213 /* DIO-MAPS-TASKS */,
+				DC74D51D292BFD4D00EA5213 /* DIO-MAPS-TASKSTests */,
+				DC74D527292BFD4D00EA5213 /* DIO-MAPS-TASKSUITests */,
+				DC74D505292BFD4B00EA5213 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC74D505292BFD4B00EA5213 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC74D504292BFD4B00EA5213 /* DIO-MAPS-TASKS.app */,
+				DC74D51A292BFD4D00EA5213 /* DIO-MAPS-TASKSTests.xctest */,
+				DC74D524292BFD4D00EA5213 /* DIO-MAPS-TASKSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC74D506292BFD4B00EA5213 /* DIO-MAPS-TASKS */ = {
+			isa = PBXGroup;
+			children = (
+				DC4A279B2A1CE8AC00220FB2 /* Repositories */,
+				DC74D53A292C0E4C00EA5213 /* Models */,
+				DC74D537292C075400EA5213 /* Controllers */,
+				DC74D507292BFD4B00EA5213 /* AppDelegate.swift */,
+				DC74D509292BFD4B00EA5213 /* SceneDelegate.swift */,
+				DC74D50D292BFD4B00EA5213 /* Main.storyboard */,
+				DC74D510292BFD4C00EA5213 /* Assets.xcassets */,
+				DC74D512292BFD4C00EA5213 /* LaunchScreen.storyboard */,
+				DC74D515292BFD4C00EA5213 /* Info.plist */,
+			);
+			path = "DIO-MAPS-TASKS";
+			sourceTree = "<group>";
+		};
+		DC74D51D292BFD4D00EA5213 /* DIO-MAPS-TASKSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC74D51E292BFD4D00EA5213 /* DIO_MAPS_TASKSTests.swift */,
+			);
+			path = "DIO-MAPS-TASKSTests";
+			sourceTree = "<group>";
+		};
+		DC74D527292BFD4D00EA5213 /* DIO-MAPS-TASKSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC74D528292BFD4D00EA5213 /* DIO_MAPS_TASKSUITests.swift */,
+				DC74D52A292BFD4D00EA5213 /* DIO_MAPS_TASKSUITestsLaunchTests.swift */,
+			);
+			path = "DIO-MAPS-TASKSUITests";
+			sourceTree = "<group>";
+		};
+		DC74D537292C075400EA5213 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC466B5B2A206B5700E2A7E6 /* AddressesTableViewController.swift */,
+				DC466B572A1D681C00E2A7E6 /* MapViewController.swift */,
+				DC74D538292C07AC00EA5213 /* TasksTableViewController.swift */,
+				DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */,
+				DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */,
+				DC5BC949292FFE57003422C8 /* Cells */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DC74D53A292C0E4C00EA5213 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC74D53B292C168300EA5213 /* Task.swift */,
+				DC74D53D292C175200EA5213 /* Category.swift */,
+				DC466B592A20675900E2A7E6 /* Address.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC74D503292BFD4B00EA5213 /* DIO-MAPS-TASKS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC74D52E292BFD4D00EA5213 /* Build configuration list for PBXNativeTarget "DIO-MAPS-TASKS" */;
+			buildPhases = (
+				DC74D500292BFD4B00EA5213 /* Sources */,
+				DC74D501292BFD4B00EA5213 /* Frameworks */,
+				DC74D502292BFD4B00EA5213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DIO-MAPS-TASKS";
+			productName = "DIO-MAPS-TASKS";
+			productReference = DC74D504292BFD4B00EA5213 /* DIO-MAPS-TASKS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC74D519292BFD4D00EA5213 /* DIO-MAPS-TASKSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC74D531292BFD4D00EA5213 /* Build configuration list for PBXNativeTarget "DIO-MAPS-TASKSTests" */;
+			buildPhases = (
+				DC74D516292BFD4D00EA5213 /* Sources */,
+				DC74D517292BFD4D00EA5213 /* Frameworks */,
+				DC74D518292BFD4D00EA5213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC74D51C292BFD4D00EA5213 /* PBXTargetDependency */,
+			);
+			name = "DIO-MAPS-TASKSTests";
+			productName = "DIO-MAPS-TASKSTests";
+			productReference = DC74D51A292BFD4D00EA5213 /* DIO-MAPS-TASKSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC74D523292BFD4D00EA5213 /* DIO-MAPS-TASKSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC74D534292BFD4D00EA5213 /* Build configuration list for PBXNativeTarget "DIO-MAPS-TASKSUITests" */;
+			buildPhases = (
+				DC74D520292BFD4D00EA5213 /* Sources */,
+				DC74D521292BFD4D00EA5213 /* Frameworks */,
+				DC74D522292BFD4D00EA5213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC74D526292BFD4D00EA5213 /* PBXTargetDependency */,
+			);
+			name = "DIO-MAPS-TASKSUITests";
+			productName = "DIO-MAPS-TASKSUITests";
+			productReference = DC74D524292BFD4D00EA5213 /* DIO-MAPS-TASKSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC74D4FC292BFD4B00EA5213 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					DC74D503292BFD4B00EA5213 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					DC74D519292BFD4D00EA5213 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = DC74D503292BFD4B00EA5213;
+					};
+					DC74D523292BFD4D00EA5213 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = DC74D503292BFD4B00EA5213;
+					};
+				};
+			};
+			buildConfigurationList = DC74D4FF292BFD4B00EA5213 /* Build configuration list for PBXProject "DIO-MAPS-TASKS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC74D4FB292BFD4B00EA5213;
+			productRefGroup = DC74D505292BFD4B00EA5213 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC74D503292BFD4B00EA5213 /* DIO-MAPS-TASKS */,
+				DC74D519292BFD4D00EA5213 /* DIO-MAPS-TASKSTests */,
+				DC74D523292BFD4D00EA5213 /* DIO-MAPS-TASKSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC74D502292BFD4B00EA5213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC74D514292BFD4C00EA5213 /* LaunchScreen.storyboard in Resources */,
+				DC74D511292BFD4C00EA5213 /* Assets.xcassets in Resources */,
+				DC74D50F292BFD4B00EA5213 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC74D518292BFD4D00EA5213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC74D522292BFD4D00EA5213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC74D500292BFD4B00EA5213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC74D53C292C168300EA5213 /* Task.swift in Sources */,
+				DC74D53E292C175200EA5213 /* Category.swift in Sources */,
+				DC4A279D2A1CE8D100220FB2 /* CategoryRepository.swift in Sources */,
+				DC466B5C2A206B5700E2A7E6 /* AddressesTableViewController.swift in Sources */,
+				DC5BC94B292FFE8D003422C8 /* TaskTableViewCell.swift in Sources */,
+				DC5BC94F29303767003422C8 /* TaskDescriptionTableViewCell.swift in Sources */,
+				DC5BC95129303796003422C8 /* DateTimeTableViewCell.swift in Sources */,
+				DC466B5A2A20675900E2A7E6 /* Address.swift in Sources */,
+				DC466B582A1D681C00E2A7E6 /* MapViewController.swift in Sources */,
+				DC4A279F2A1D58D900220FB2 /* TaskRepository.swift in Sources */,
+				DC74D539292C07AC00EA5213 /* TasksTableViewController.swift in Sources */,
+				DC74D508292BFD4B00EA5213 /* AppDelegate.swift in Sources */,
+				DC74D50A292BFD4B00EA5213 /* SceneDelegate.swift in Sources */,
+				DC5BC94D2930260A003422C8 /* CreateTaskViewController.swift in Sources */,
+				DC4A279A2A1CE7A700220FB2 /* CategoriesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC74D516292BFD4D00EA5213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC74D51F292BFD4D00EA5213 /* DIO_MAPS_TASKSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC74D520292BFD4D00EA5213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC74D529292BFD4D00EA5213 /* DIO_MAPS_TASKSUITests.swift in Sources */,
+				DC74D52B292BFD4D00EA5213 /* DIO_MAPS_TASKSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC74D51C292BFD4D00EA5213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC74D503292BFD4B00EA5213 /* DIO-MAPS-TASKS */;
+			targetProxy = DC74D51B292BFD4D00EA5213 /* PBXContainerItemProxy */;
+		};
+		DC74D526292BFD4D00EA5213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC74D503292BFD4B00EA5213 /* DIO-MAPS-TASKS */;
+			targetProxy = DC74D525292BFD4D00EA5213 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC74D50D292BFD4B00EA5213 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC74D50E292BFD4B00EA5213 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC74D512292BFD4C00EA5213 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC74D513292BFD4C00EA5213 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC74D52C292BFD4D00EA5213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC74D52D292BFD4D00EA5213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC74D52F292BFD4D00EA5213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB927AN2T5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DIO-MAPS-TASKS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.facioli.DIO-MAPS-TASKS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC74D530292BFD4D00EA5213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB927AN2T5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DIO-MAPS-TASKS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.facioli.DIO-MAPS-TASKS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC74D532292BFD4D00EA5213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB927AN2T5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.facioli.DIO-MAPS-TASKSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIO-MAPS-TASKS.app/DIO-MAPS-TASKS";
+			};
+			name = Debug;
+		};
+		DC74D533292BFD4D00EA5213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB927AN2T5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.facioli.DIO-MAPS-TASKSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIO-MAPS-TASKS.app/DIO-MAPS-TASKS";
+			};
+			name = Release;
+		};
+		DC74D535292BFD4D00EA5213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB927AN2T5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.facioli.DIO-MAPS-TASKSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DIO-MAPS-TASKS";
+			};
+			name = Debug;
+		};
+		DC74D536292BFD4D00EA5213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB927AN2T5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.facioli.DIO-MAPS-TASKSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DIO-MAPS-TASKS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC74D4FF292BFD4B00EA5213 /* Build configuration list for PBXProject "DIO-MAPS-TASKS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC74D52C292BFD4D00EA5213 /* Debug */,
+				DC74D52D292BFD4D00EA5213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC74D52E292BFD4D00EA5213 /* Build configuration list for PBXNativeTarget "DIO-MAPS-TASKS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC74D52F292BFD4D00EA5213 /* Debug */,
+				DC74D530292BFD4D00EA5213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC74D531292BFD4D00EA5213 /* Build configuration list for PBXNativeTarget "DIO-MAPS-TASKSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC74D532292BFD4D00EA5213 /* Debug */,
+				DC74D533292BFD4D00EA5213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC74D534292BFD4D00EA5213 /* Build configuration list for PBXNativeTarget "DIO-MAPS-TASKSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC74D535292BFD4D00EA5213 /* Debug */,
+				DC74D536292BFD4D00EA5213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC74D4FC292BFD4B00EA5213 /* Project object */;
+}
