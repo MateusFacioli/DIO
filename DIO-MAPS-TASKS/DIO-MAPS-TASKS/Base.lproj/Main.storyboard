@@ -36,7 +36,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22/12/2022" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBQ-jE-GV8">
-                                            <rect key="frame" x="18.5" y="53" width="66" height="14.5"/>
+                                            <rect key="frame" x="18" y="53" width="67" height="14.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="gBQ-jE-GV8" secondAttribute="height" multiplier="59:13" id="Zgx-e7-2BM"/>
                                             </constraints>
