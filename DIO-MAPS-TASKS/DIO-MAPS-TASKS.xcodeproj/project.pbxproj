@@ -13,6 +13,9 @@
 		DC4A279A2A1CE7A700220FB2 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */; };
 		DC4A279D2A1CE8D100220FB2 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */; };
 		DC4A279F2A1D58D900220FB2 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */; };
+		DC5229C12A239AD500158031 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5229C02A239AD500158031 /* WeatherRepository.swift */; };
+		DC5229C32A23B96300158031 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5229C22A23B96300158031 /* Weather.swift */; };
+		DC5229C52A23C0E800158031 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5229C42A23C0E800158031 /* WeatherViewController.swift */; };
 		DC5BC94B292FFE8D003422C8 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94A292FFE8D003422C8 /* TaskTableViewCell.swift */; };
 		DC5BC94D2930260A003422C8 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */; };
 		DC5BC94F29303767003422C8 /* TaskDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BC94E29303767003422C8 /* TaskDescriptionTableViewCell.swift */; };
@@ -54,6 +57,9 @@
 		DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 		DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		DC5229C02A239AD500158031 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		DC5229C22A23B96300158031 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		DC5229C42A23C0E800158031 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		DC5BC94A292FFE8D003422C8 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		DC5BC94E29303767003422C8 /* TaskDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 			children = (
 				DC4A279C2A1CE8D100220FB2 /* CategoryRepository.swift */,
 				DC4A279E2A1D58D900220FB2 /* TaskRepository.swift */,
+				DC5229C02A239AD500158031 /* WeatherRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 				DC4A27992A1CE7A700220FB2 /* CategoriesTableViewController.swift */,
 				DC5BC94C2930260A003422C8 /* CreateTaskViewController.swift */,
 				DC5BC949292FFE57003422C8 /* Cells */,
+				DC5229C42A23C0E800158031 /* WeatherViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +199,7 @@
 				DC74D53B292C168300EA5213 /* Task.swift */,
 				DC74D53D292C175200EA5213 /* Category.swift */,
 				DC466B592A20675900E2A7E6 /* Address.swift */,
+				DC5229C22A23B96300158031 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,7 +336,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC74D53C292C168300EA5213 /* Task.swift in Sources */,
+				DC5229C52A23C0E800158031 /* WeatherViewController.swift in Sources */,
+				DC5229C32A23B96300158031 /* Weather.swift in Sources */,
 				DC74D53E292C175200EA5213 /* Category.swift in Sources */,
+				DC5229C12A239AD500158031 /* WeatherRepository.swift in Sources */,
 				DC4A279D2A1CE8D100220FB2 /* CategoryRepository.swift in Sources */,
 				DC466B5C2A206B5700E2A7E6 /* AddressesTableViewController.swift in Sources */,
 				DC5BC94B292FFE8D003422C8 /* TaskTableViewCell.swift in Sources */,
